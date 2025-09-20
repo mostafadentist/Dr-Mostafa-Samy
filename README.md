@@ -1,4 +1,4 @@
-"# Dr. Mostafa Samy – Portfolio Website
+Dr. Mostafa Samy – Portfolio Website
 
 Welcome to the repository of my professional portfolio website!  
 
