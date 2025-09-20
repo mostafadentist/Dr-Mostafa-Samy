@@ -20,7 +20,7 @@
       justify-content:center;
       text-align:center;
       position:relative;
-      z-index:2;
+      z-index:3;
     }
     header h1 {
       font-size:3.5rem;
@@ -40,6 +40,8 @@
     }
     section {
       padding:80px 12%;
+      position:relative;
+      z-index:3;
     }
     h2 {
       color:#00c6ff;
@@ -71,8 +73,17 @@
       background:#111;
       color:#aaa;
       font-size:0.9rem;
+      position:relative;
+      z-index:3;
     }
-    a { color:#00c6ff; text-decoration:none; }
+    a { 
+      color:#00c6ff; 
+      text-decoration:none; 
+      position:relative;
+      z-index:3;
+      cursor:pointer;
+    }
+    a:hover { text-decoration:underline; }
     #particles-js {
       position:fixed;
       top:0; left:0;
@@ -86,12 +97,12 @@
 
   <header>
     <h1>Dr. Mostafa Samy</h1>
-    <p>Data Scientist | Operations Research and Applied Mathematics | Technical Product Manager | Researcher in Applied Statistics</p>
+    <p>Data Scientist | Operations Research & Applied Mathematics | Technical Product Manager</p>
     <p>
       <a href="mailto:mostafasamyyyy@gmail.com">Email</a> | 
       <a href="https://linkedin.com/in/dr-mostafa-samy">LinkedIn</a> | 
       <a href="https://github.com/mostafadentist">GitHub</a> | 
-      <a href="https://gazal.ai">Website</a>
+      <a href="https://www.gazal.ai/about-us" target="_blank">Gazal.ai</a>
     </p>
   </header>
 
@@ -99,122 +110,41 @@
     <h2>About Me</h2>
     <div class="card">
       <p>
-        Highly technical data scientist and operations research specialist with deep expertise 
-        in optimization, machine learning, and statistical modeling. Experienced in designing 
-        decision-support systems, predictive models, and algorithms that transform complex 
-        healthcare and business challenges into scalable, AI-driven solutions.
+        Data scientist and operations research specialist with expertise in optimization, machine learning, 
+        and applied statistics. Focused on building AI-driven solutions for healthcare and business challenges.
       </p>
     </div>
   </section>
 
   <section>
-    <h2>Core Technical Skills</h2>
+    <h2>Projects</h2>
+
     <div class="card">
-      <ul>
-        <li><b>Optimization & OR:</b> Linear/Integer Programming, Queuing Models, Simulation (SimPy, Monte Carlo)</li>
-        <li><b>Machine Learning:</b> Gradient Boosting, SVM, Random Forest, Neural Networks, Time Series (ARIMA, Prophet)</li>
-        <li><b>Anomaly & Outlier Detection:</b> PCA, Isolation Forest, LOF, ABOD, HBOS, clustering (KMeans)</li>
-        <li><b>Generative AI & LLMs:</b> Fine-tuning with LoRA, DoRA, GRPO for clinical reasoning and decision support</li>
-        <li><b>Data Engineering & BI:</b> Python, SQL, Power BI, Advanced Excel, SPSS, Minitab</li>
-      </ul>
+      <h3>Gazal‑R1: Medical Large Language Model</h3>
+      <p>
+        Co‑created <b>Gazal‑R1</b>, achieving state‑of‑the‑art performance 
+        on MedQA, MMLU Pro, and PubMedQA benchmarks.
+      </p>
+      <p><b>Tech:</b> PyTorch, HuggingFace, LoRA, GRPO</p>
+      <a href="https://arxiv.org/abs/2501.01234" target="_blank">📄 Read Full Paper</a>
+    </div>
+
+    <div class="card">
+      <h3>Fraud Detection in Healthcare Claims</h3>
+      <p>
+        Built ML + anomaly detection pipelines saving insurers millions annually.
+      </p>
+      <a href="https://www.sciencedirect.com/science/article/pii/S1877050924012345" target="_blank">📄 Read Publication</a>
     </div>
   </section>
 
-<section>
-  <h2>Projects</h2>
-
-  <div class="card">
-    <h3>Gazal‑R1: Medical Large Language Model (32B)</h3>
-    <p>
-      Co‑created <b>Gazal‑R1</b>, a medical LLM achieving state‑of‑the‑art performance 
-      on <i>MedQA (87.1%), MMLU Pro (81.6%), PubMedQA (79.6%)</i>.
-    </p>
-    <p><b>Tech:</b> PyTorch, HuggingFace, LoRA, DoRA, GRPO</p>
-    <a href="https://arxiv.org/abs/2501.01234" target="_blank">📄 Read Full Paper on arXiv</a>
-  </div>
-
-  <div class="card">
-    <h3>Healthcare Fraud Detection & Claims Optimization</h3>
-    <p>
-      Developed ML + statistical models (Isolation Forest, PCA, LOF, ABOD) deployed 
-      with insurers <b>Medgulf</b> and <b>Tawuniya</b>, generating multi‑million USD savings annually.
-    </p>
-    <p><b>Tech:</b> Python, PyOD, SQL, Power BI</p>
-    <a href="https://www.sciencedirect.com/science/article/pii/S1877050924012345" target="_blank">📄 Read Full Paper on ScienceDirect</a>
-  </div>
-
-  <div class="card">
-    <h3>Hospital Workforce Scheduling</h3>
-    <p>
-      Built MIP/ILP roster optimizers for 300+ staff across multi‑site hospitals, integrating 
-      workload forecasting. Results: <b>–15% overtime</b>, <b>–21% understaffing</b>, 
-      wait time dropped from 47 → 29 minutes.
-    </p>
-    <p><b>Tech:</b> OR‑Tools, PuLP, ARIMA, Prophet</p>
-  </div>
-
-  <div class="card">
-    <h3>Dental Centers Optimization</h3>
-    <p>
-      Designed LP optimization for <b>6‑site dental networks</b> using chair allocation + no‑show prediction, 
-      raising annual <b>revenue per chair by 14%</b>.
-    </p>
-  </div>
-</section>
-
-<section>
-  <h2>Research & Publications</h2>
-  <div class="card">
-    <ul>
-      <li>📄 <a href="https://arxiv.org/abs/2501.01234" target="_blank">Gazal‑R1: Achieving State‑of‑the‑Art Medical Reasoning (arXiv, 2025)</a></li>
-      <li>📄 <a href="https://www.sciencedirect.com/science/article/pii/S1877050924012345" target="_blank">Statistical Modeling for Healthcare Claims Fraud Detection (ScienceDirect, 2024)</a></li>
-      <li>🔗 <a href="https://www.researchgate.net/profile/Mostafa-Samy" target="_blank">ResearchGate Profile</a></li>
-      <li>💼 <a href="https://www.linkedin.com/in/dr-mostafa-samy" target="_blank">LinkedIn Profile</a></li>
-      <li>💻 <a href="https://github.com/mostafadentist" target="_blank">GitHub Portfolio</a></li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Key Achievements</h2>
-  <div class="card">
-    <ul>
-      <li>💰 Fraud detection pipelines saved insurers <b>multi‑million USD annually</b>.</li>
-      <li>📉 Reduced hospital understaffing incidents by <b>200+ cases / year</b>.</li>
-      <li>⏱️ Cut ER wait times from <b>47 → 29 minutes</b> via queuing & staffing optimization.</li>
-      <li>🦷 Increased dental center revenue per chair by <b>14%</b>.</li>
-      <li>🤖 Integrated <b>LLMs</b> into claims adjudication & CDS agents, scaling decision support.</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Research & Publications</h2>
-  <div class="card">
-    <p>📄 <a href="https://arxiv.org/html/2506.21594v1" target="_blank">Gazal‑R1: Achieving State‑of‑the‑Art Medical Reasoning (arXiv, 2025)</a></p>
-    <p>📄 <a href="https://www.sciencedirect.com/science/article/pii/S1877050924029740" target="_blank">Statistical Modeling for Healthcare Claims Fraud Detection (ScienceDirect, 2024)</a></p>
-    <p>🔗 <a href="https://www.researchgate.net/profile/Mostafa-Samy" target="_blank">ResearchGate Profile</a></p>
-  </div>
-</section>
-
-<section>
-  <h2>Achievements</h2>
-  <div class="card">
-    <ul>
-      <li>💰 Delivered multi‑million USD savings by fraud detection AI.</li>
-      <li>📉 Reduced understaffing incidents by 200+ yearly with forecasting + optimization.</li>
-      <li>⏱️ Cut ER waiting times from 47 → 29 minutes using queue theory models.</li>
-      <li>🦷 Boosted dental centers revenue per chair by 14%.</li>
-    </ul>
-  </div>
-</section>
   <section>
     <h2>Education</h2>
     <div class="card">
       <p>
-        PhD Student (2025, Operations Research & Applied Math) – Cairo University  
+        PhD Student (Operations Research & Applied Math) – Cairo University  
         MSc in Operations Research & Applied Math – Cairo University  
-        Diploma in Applied Statistics 
+        Diploma in Applied Statistics
       </p>
     </div>
   </section>
